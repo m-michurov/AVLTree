@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/AVLTree/avltree.c
+avltree.h
+E:/CLionProjects/AVLTree/avltree.h
+
+E:/CLionProjects/AVLTree/avltree.h
+malloc.h
+-
+stdio.h
+-
+
+E:/CLionProjects/AVLTree/main.c
+avltree.h
+E:/CLionProjects/AVLTree/avltree.h
+
