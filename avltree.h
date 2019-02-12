@@ -6,6 +6,9 @@
 #include <malloc.h>
 #include <stdio.h>
 
+#define left 0
+#define right 1
+
 
 typedef struct tree_node node;
 
@@ -13,8 +16,7 @@ struct tree_node {
     int key;
     unsigned int height;
 
-    node * left_node;
-    node * right_node;
+    node * child[2];
 };
 
 static node * new_node(
@@ -27,12 +29,6 @@ static void count_height(
         node * root);
 
 static int balance_factor(
-        node * root);
-
-static node * rotate_left(
-        node * root);
-
-static node * rotate_right(
         node * root);
 
 static node * balance(

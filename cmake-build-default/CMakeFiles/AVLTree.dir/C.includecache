@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-E:/CLionProjects/AVLTree/main.c
-stdio.h
--
+H:/NSUProgLabs/AVLTree/avltree.c
+avltree.h
+H:/NSUProgLabs/AVLTree/avltree.h
+
+H:/NSUProgLabs/AVLTree/avltree.h
 malloc.h
+-
+stdio.h
 -
 

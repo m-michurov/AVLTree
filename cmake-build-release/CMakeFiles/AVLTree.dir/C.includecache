@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-E:/CLionProjects/AVLTree/avltree.c
+H:/NSUProgLabs/AVLTree/avltree.c
 avltree.h
-E:/CLionProjects/AVLTree/avltree.h
+H:/NSUProgLabs/AVLTree/avltree.h
 
-E:/CLionProjects/AVLTree/avltree.h
+H:/NSUProgLabs/AVLTree/avltree.h
 malloc.h
 -
 stdio.h
 -
 
-E:/CLionProjects/AVLTree/main.c
+H:/NSUProgLabs/AVLTree/main.c
 avltree.h
-E:/CLionProjects/AVLTree/avltree.h
+H:/NSUProgLabs/AVLTree/avltree.h
 

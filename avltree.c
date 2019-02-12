@@ -7,7 +7,7 @@ static node * new_node(
 
     new_node->key = key;
     new_node->height = 1;
-    new_node->left_node = new_node->right_node = 0;
+    new_node->child[left] = new_node->child[right] = 0;
 
     return new_node;
 }
@@ -23,8 +23,8 @@ inline unsigned int get_height(
 static inline void count_height(
         node * root)
 {
-    unsigned int left_height = get_height(root->left_node);
-    unsigned int right_height = get_height(root->right_node);
+    unsigned int left_height = get_height(root->child[left]);
+    unsigned int right_height = get_height(root->child[right]);
 
     root->height = (left_height > right_height ? left_height : right_height) + 1;
 }
@@ -32,32 +32,18 @@ static inline void count_height(
 static inline int balance_factor(
         node * root)
 {
-    return get_height(root->right_node) - get_height(root->left_node);
+    return get_height(root->child[right]) - get_height(root->child[left]);
 }
 
 
-static node * rotate_left(
-        node * root)
+static node * rotate(
+        node * root,
+        int dir)
 {
-    node * new_root = root->right_node;
+    node * new_root = root->child[1 - dir];
 
-    root->right_node = new_root->left_node;
-    new_root->left_node = root;
-
-    count_height(root);
-    count_height(new_root);
-
-    return new_root;
-}
-
-
-static node * rotate_right(
-        node * root)
-{
-    node * new_root = root->left_node;
-
-    root->left_node = new_root->right_node;
-    new_root->right_node = root;
+    root->child[1 - dir] = new_root->child[dir];
+    new_root->child[dir] = root;
 
     count_height(root);
     count_height(new_root);
@@ -72,17 +58,17 @@ static node * balance(
     count_height(root);
 
     if (balance_factor(root) == 2){
-        if (balance_factor(root->right_node) < 0)
-            root->right_node = rotate_right(root->right_node);
+        if (balance_factor(root->child[right]) < 0)
+            root->child[right] = rotate(root->child[right], right);
 
-        return rotate_left(root);
+        return rotate(root, left);
     }
 
     if (balance_factor(root) == -2) {
-        if (balance_factor(root->left_node) > 0)
-            root->left_node = rotate_left(root->left_node);
+        if (balance_factor(root->child[left]) > 0)
+            root->child[left] = rotate(root->child[left], left);
 
-        return rotate_right(root);
+        return rotate(root, right);
     }
 
     return root;
@@ -96,9 +82,9 @@ node * insert(
     if (root == 0)
         return new_node(key);
     if (key < root->key)
-        root->left_node = insert(root->left_node, key);
+        root->child[left] = insert(root->child[left], key);
     else
-        root->right_node = insert(root->right_node, key);
+        root->child[right] = insert(root->child[right], key);
 
     return balance(root);
 }
@@ -110,8 +96,8 @@ void destroy(
     if (tree == NULL)
         return;
 
-    destroy(tree->left_node);
-    destroy(tree->right_node);
+    destroy(tree->child[left]);
+    destroy(tree->child[right]);
 
     free(tree);
 }

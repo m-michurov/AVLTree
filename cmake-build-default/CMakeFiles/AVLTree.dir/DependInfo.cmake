@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/CLionProjects/AVLTree/avltree.c" "E:/CLionProjects/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir/avltree.c.obj"
-  "E:/CLionProjects/AVLTree/main.c" "E:/CLionProjects/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir/main.c.obj"
+  "H:/NSUProgLabs/AVLTree/avltree.c" "H:/NSUProgLabs/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir/avltree.c.obj"
+  "H:/NSUProgLabs/AVLTree/main.c" "H:/NSUProgLabs/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

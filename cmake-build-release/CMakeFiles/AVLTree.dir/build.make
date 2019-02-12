@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\CLion 2018.2.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\CLionProjects\AVLTree
+CMAKE_SOURCE_DIR = H:\NSUProgLabs\AVLTree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\CLionProjects\AVLTree\cmake-build-release
+CMAKE_BINARY_DIR = H:\NSUProgLabs\AVLTree\cmake-build-release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AVLTree.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/AVLTree.dir/flags.make
 
 CMakeFiles/AVLTree.dir/main.c.obj: CMakeFiles/AVLTree.dir/flags.make
 CMakeFiles/AVLTree.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CLionProjects\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AVLTree.dir/main.c.obj"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AVLTree.dir\main.c.obj   -c E:\CLionProjects\AVLTree\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\NSUProgLabs\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/AVLTree.dir/main.c.obj"
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AVLTree.dir\main.c.obj   -c H:\NSUProgLabs\AVLTree\main.c
 
 CMakeFiles/AVLTree.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/AVLTree.dir/main.c.i"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\CLionProjects\AVLTree\main.c > CMakeFiles\AVLTree.dir\main.c.i
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\NSUProgLabs\AVLTree\main.c > CMakeFiles\AVLTree.dir\main.c.i
 
 CMakeFiles/AVLTree.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/AVLTree.dir/main.c.s"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\CLionProjects\AVLTree\main.c -o CMakeFiles\AVLTree.dir\main.c.s
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\NSUProgLabs\AVLTree\main.c -o CMakeFiles\AVLTree.dir\main.c.s
 
 CMakeFiles/AVLTree.dir/avltree.c.obj: CMakeFiles/AVLTree.dir/flags.make
 CMakeFiles/AVLTree.dir/avltree.c.obj: ../avltree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\CLionProjects\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/AVLTree.dir/avltree.c.obj"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AVLTree.dir\avltree.c.obj   -c E:\CLionProjects\AVLTree\avltree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=H:\NSUProgLabs\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/AVLTree.dir/avltree.c.obj"
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\AVLTree.dir\avltree.c.obj   -c H:\NSUProgLabs\AVLTree\avltree.c
 
 CMakeFiles/AVLTree.dir/avltree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/AVLTree.dir/avltree.c.i"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\CLionProjects\AVLTree\avltree.c > CMakeFiles\AVLTree.dir\avltree.c.i
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E H:\NSUProgLabs\AVLTree\avltree.c > CMakeFiles\AVLTree.dir\avltree.c.i
 
 CMakeFiles/AVLTree.dir/avltree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/AVLTree.dir/avltree.c.s"
-	E:\Win-builds\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\CLionProjects\AVLTree\avltree.c -o CMakeFiles\AVLTree.dir\avltree.c.s
+	C:\tools\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S H:\NSUProgLabs\AVLTree\avltree.c -o CMakeFiles\AVLTree.dir\avltree.c.s
 
 # Object files for target AVLTree
 AVLTree_OBJECTS = \
@@ -96,7 +96,7 @@ AVLTree.exe: CMakeFiles/AVLTree.dir/build.make
 AVLTree.exe: CMakeFiles/AVLTree.dir/linklibs.rsp
 AVLTree.exe: CMakeFiles/AVLTree.dir/objects1.rsp
 AVLTree.exe: CMakeFiles/AVLTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\CLionProjects\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable AVLTree.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=H:\NSUProgLabs\AVLTree\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable AVLTree.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AVLTree.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/AVLTree.dir/clean:
 .PHONY : CMakeFiles/AVLTree.dir/clean
 
 CMakeFiles/AVLTree.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\CLionProjects\AVLTree E:\CLionProjects\AVLTree E:\CLionProjects\AVLTree\cmake-build-release E:\CLionProjects\AVLTree\cmake-build-release E:\CLionProjects\AVLTree\cmake-build-release\CMakeFiles\AVLTree.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" H:\NSUProgLabs\AVLTree H:\NSUProgLabs\AVLTree H:\NSUProgLabs\AVLTree\cmake-build-release H:\NSUProgLabs\AVLTree\cmake-build-release H:\NSUProgLabs\AVLTree\cmake-build-release\CMakeFiles\AVLTree.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/AVLTree.dir/depend
 

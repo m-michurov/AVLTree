@@ -1,3 +1,3 @@
-E:/CLionProjects/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir
-E:/CLionProjects/AVLTree/cmake-build-default/CMakeFiles/edit_cache.dir
-E:/CLionProjects/AVLTree/cmake-build-default/CMakeFiles/rebuild_cache.dir
+H:/NSUProgLabs/AVLTree/cmake-build-default/CMakeFiles/AVLTree.dir
+H:/NSUProgLabs/AVLTree/cmake-build-default/CMakeFiles/edit_cache.dir
+H:/NSUProgLabs/AVLTree/cmake-build-default/CMakeFiles/rebuild_cache.dir
