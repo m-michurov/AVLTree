@@ -1,11 +1,28 @@
-/*---------------------------------------------*/
-/*                                             */
-/*   Special thanks to Николай Ершов @nickme   */
-/*      https://habr.com/ru/post/150732/       */
-/*                                             */
-/*---------------------------------------------*/
+/*---------------------------------------------*
+*                                              *
+*    Special thanks to Николай Ершов @nickme   *
+*       https://habr.com/ru/post/150732/       *
+*                                              *
+*----------------------------------------------*/
 
 #include "avltree.h"
+/*
+*t()
+*
+* root
+* t(left)
+* t(right)
+*
+* t(left)
+* root
+* t(right)
+*
+* t(left)
+* t(right)
+* root
+*/
+
+
 
 int main() {
     node * tree = NULL;
@@ -25,7 +42,9 @@ int main() {
 
         tree = insert(tree, cur);
     }
-    printf("%d", get_height(tree));
+    printf("%d\n", get_height(tree));
+
+    walk_the_tree(tree);
 
     destroy(tree);
 

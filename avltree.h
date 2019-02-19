@@ -41,4 +41,7 @@ node * insert(
 void destroy(
         node * tree);
 
+void walk_the_tree(
+        node * root);
+
 #endif

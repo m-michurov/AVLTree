@@ -81,6 +81,7 @@ node * insert(
 {
     if (root == 0)
         return new_node(key);
+
     if (key < root->key)
         root->child[left] = insert(root->child[left], key);
     else
@@ -100,5 +101,16 @@ void destroy(
     destroy(tree->child[right]);
 
     free(tree);
+}
+
+void walk_the_tree(
+        node * root)
+{
+    if (root == NULL)
+        return;
+
+    walk_the_tree(root->child[left]);
+    printf("%d ", root->key);
+    walk_the_tree(root->child[right]);
 }
 
